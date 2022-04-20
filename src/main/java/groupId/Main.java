@@ -8,6 +8,9 @@ public class Main {
         System.out.println(c);
         myMetod2(a);
         System.out.println(myMetod3(a));
+        int d = 3;
+        String i = "Hello world!!!";
+        myMetod4(i,d);
 
     }
     public static boolean myMetod(int a, int b){
@@ -23,5 +26,11 @@ public class Main {
     }
     public static boolean myMetod3(int a){
         return a<0;
+    }
+    public static void myMetod4(String text, int a){
+        for (int b=0;b<a;b++){
+            System.out.println(text);
+        }
+
     }
 }
