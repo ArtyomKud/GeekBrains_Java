@@ -11,6 +11,8 @@ public class Main {
         int d = 3;
         String i = "Hello world!!!";
         myMetod4(i,d);
+        int f = 2022;
+        System.out.println(myMetod5(f));
 
     }
     public static boolean myMetod(int a, int b){
@@ -31,6 +33,20 @@ public class Main {
         for (int b=0;b<a;b++){
             System.out.println(text);
         }
+
+    }
+    public static boolean myMetod5(int a){
+        int b = a%4;
+        int c = a%100;
+        int d = a%400;
+        boolean i;
+        if (b==0&&c!=0||d==0){
+            i = true;
+        }
+        else {
+            i = false;
+        }
+        return i;
 
     }
 }
