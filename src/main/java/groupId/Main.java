@@ -7,6 +7,7 @@ public class Main {
         boolean c = myMetod(a,b);
         System.out.println(c);
         myMetod2(a);
+        System.out.println(myMetod3(a));
 
     }
     public static boolean myMetod(int a, int b){
@@ -19,5 +20,8 @@ public class Main {
         else {
             System.out.println("a положительно!");
         }
+    }
+    public static boolean myMetod3(int a){
+        return a<0;
     }
 }
