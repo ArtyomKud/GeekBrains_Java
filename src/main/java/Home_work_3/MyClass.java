@@ -17,5 +17,12 @@ public class MyClass {
             }
         }
             System.out.println(Arrays.toString(a));
+
+        int[] b = new int[100];
+        for(int i =0; i<b.length;i++){
+            b[i]+=i+1;
+        }
+        System.out.println(Arrays.toString(b));
+
     }
 }
