@@ -40,6 +40,11 @@ public class MyClass {
             }
         }
         myMetodPrint(d);
+        int len = 4;
+        int initialValue = 6;
+        System.out.println(Arrays.toString(myMetod(len,initialValue)));
+
+
 
 
         }
@@ -50,5 +55,14 @@ public class MyClass {
             }
             System.out.println();
         }
+    }
+    public static int[] myMetod(int a, int b){
+        int x[] = new int [a];
+        for(int i = 0;i<x.length; i++){
+            x[i]=b;
+
+        }
+        return x;
+
     }
 }
