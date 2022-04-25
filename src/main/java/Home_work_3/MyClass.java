@@ -30,5 +30,25 @@ public class MyClass {
 
         }
         System.out.println(Arrays.toString(c));
+        int [][] d = new int[4][4];
+        for(int i=0,j=0,k=3; i< d.length&&j<d[i].length; i++, j++,k--){
+            if(i==j||i+k== d.length){
+                d[i][j]=1;
+                d[i][k]=1;
+            }
+            else{
+            }
+        }
+        myMetodPrint(d);
+
+
+        }
+        public static void myMetodPrint(int[][] d){
+        for(int i=0; i<d.length; i++){
+            for(int j = 0; j<d[i].length; j++){
+                System.out.print(d[i][j]);
+            }
+            System.out.println();
+        }
     }
 }
