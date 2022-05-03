@@ -4,8 +4,8 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class HomeWork4 {
-    public static int SIZE = 5;
-    public static int DOTS_TO_WIN = 4;
+    public static int SIZE = 3;
+    public static int DOTS_TO_WIN = 3;
     public static final char DOT_EMPTY = '•';
     public static final char DOT_X = 'X';
     public static final char DOT_O = 'O';
@@ -13,7 +13,7 @@ public class HomeWork4 {
     public static Scanner sc = new Scanner(System.in);
     public static Random rand = new Random();
     public static void main(String[] args) {
-        if (DOTS_TO_WIN<SIZE){
+        if (DOTS_TO_WIN<=SIZE){
 
 
         initMap();
