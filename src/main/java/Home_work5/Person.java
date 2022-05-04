@@ -49,4 +49,48 @@ public class Person {
     public void print(){
         System.out.println("ФИО:"+this.fullName+"  Должность:"+this.position+"  Email:"+this.email+"  Номер телефона:"+this.phoneNumber+"  Уровень зарплаты:"+ this.wage+"  Возраст:"+this.age);
     }
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    public String getPosition() {
+        return position;
+    }
+
+    public void setPosition(String position) {
+        this.position = position;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public int getWage() {
+        return wage;
+    }
+
+    public void setWage(int wage) {
+        this.wage = wage;
+    }
+
+    public int getAge() {
+        return age;
+    }
 }
