@@ -1,6 +1,6 @@
 package Home_work6;
 
-public class Animal {
+ public abstract class Animal {
     private String name;
 
 
@@ -17,7 +17,8 @@ public class Animal {
         this.name = name;
     }
 
-
+    abstract void run(int a);
+    abstract void toSail(int b);
 
 
 }

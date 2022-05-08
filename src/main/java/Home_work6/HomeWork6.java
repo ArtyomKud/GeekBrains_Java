@@ -24,5 +24,6 @@ public class HomeWork6 {
         System.out.println("Котов "+Cat.getSummCat()+" шт");
         System.out.println("Собак "+Dog.getSummDog()+" шт");
 
+
     }
 }
