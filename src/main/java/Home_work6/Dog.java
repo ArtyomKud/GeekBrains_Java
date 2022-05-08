@@ -1,7 +1,7 @@
 package Home_work6;
 
 public class Dog extends Animal {
-    static int summDog = 0;
+    static int summDog;
     final int toSailLimit= 10;
     final int runLimit=500;
     public Dog(String name) {

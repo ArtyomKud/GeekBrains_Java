@@ -1,7 +1,7 @@
 package Home_work6;
 
 public class Cat extends Animal {
-    static int summCat = 0;
+    static int summCat;
     final int runLimit=200;
 
     public Cat(String name) {
