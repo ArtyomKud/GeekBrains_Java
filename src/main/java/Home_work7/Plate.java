@@ -5,27 +5,22 @@ public class Plate {
     public Plate(int food) {
         this.food = food;
     }
-    public boolean decreaseFood(int n, boolean g) {
+    public int decreaseFood(int n) {
         if(n<food){
             food -= n;
-            g=true;
         }
-        else{
-            System.out.println("Аппетит кота превышает объем еды в тарелке");
-            g=false;
+        else {
+            n=food;
+            food-=n;
         }
-        return g;
+        return n;
     }
-    //public boolean decreaseFood1(int n, boolean g) {
-        //if(n<food){
-            //g= true;
-        //}
-        //else{
-            //g=false;
-        //}
-        //return g;
-    //}
+
     public void info() {
         System.out.println("plate: " + food);
+    }
+
+    public void setFood(int food) {
+        this.food = food;
     }
 }
