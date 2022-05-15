@@ -5,7 +5,7 @@ import Home_work7.Plate;
 
 public class Main {
     public static void main(String[] args){
-        Cat cat = new Cat("Barsik", 50);
+        Cat cat = new Cat("Barsik", 150);
         Plate plate = new Plate(100);
         plate.info();
         cat.eat(plate);
