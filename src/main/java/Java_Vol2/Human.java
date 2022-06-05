@@ -2,21 +2,21 @@ package Java_Vol2;
 
 public class Human implements List_of_actions{
     private String name;
-    private String Type = "Человек";
+    private String type = "Человек";
 
     public Human (String name){
         this.name=name;
     }
     @Override
-    public void run() {
-        System.out.println(Type + " " + name + " побежал");
+    public void run(Treadmill t) {
+        t.runningInTreadmill(type, name);
 
 
     }
 
     @Override
-    public void jump() {
-        System.out.println(Type + " " + name + " подпрыгнул");
+    public void jump(Wall p) {
+        p.jumpOverTheWall(type, name);
 
     }
 
