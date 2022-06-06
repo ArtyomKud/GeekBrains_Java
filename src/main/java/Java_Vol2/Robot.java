@@ -8,15 +8,25 @@ public class Robot implements List_of_actions{
         this.name=name;
     }
     @Override
-    public void run(Treadmill t) {
-        t.runningInTreadmill(type, name);
+    public void run(Inventory t) {
+        if (t.getPurpose()=="Бегать"){
+            System.out.println(type+" "+name+" побегал по "+t.getName());
+        }
+        else {
+            System.out.println(type+" "+name+" не стал бегать по "+t.getName());
+        }
 
 
     }
 
     @Override
-    public void jump(Wall p) {
-        p.jumpOverTheWall(type, name);
+    public void jump(Inventory p) {
+        if (p.getPurpose()=="Перепрыгнуть"){
+            System.out.println(type+" "+name+" прыгнул через "+p.getName());
+        }
+        else {
+            System.out.println(type+" "+name+" не стал перепрыгивать через "+p.getName());
+        }
 
     }
 
